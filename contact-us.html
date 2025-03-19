@@ -7,11 +7,12 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <meta name="description" content="Sekure - Security Systems HTML5 Template">
   <link href="assets/images/favicon/favicon.png" rel="icon">
-  <title>Sekure - Security Systems HTML5 Template</title>
+  <title>Contact Us - Quardzlahnn</title>
 
   <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Roboto:wght@400;700&display=swap">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  <!-- font awesome -->
   <link rel="stylesheet" href="assets/css/libraries.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,12 +22,12 @@
     <div class="preloader">
       <div class="loading"><span></span><span></span><span></span><span></span></div>
     </div><!-- /.preloader -->
-
+    
     <!-- =========================
         Header
     =========================== -->
     <header class="header header-transparent header-layout1">
-      <nav class="navbar navbar-expand-lg sticky-navbar">
+      <nav class="navbar navbar-expand-lg sticky-navbar bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
             <img src="assets/images/logo/logo-light.png" class="logo-light" alt="logo"
@@ -40,10 +41,10 @@
           <div class="collapse navbar-collapse" id="mainNavigation">
             <ul class="navbar-nav mx-auto">
               <li class="nav__item">
-                <a href="index.html" class="nav__item-link active">Home</a>
+                <a href="index.html" class="nav__item-link ">Home</a>
               </li>
               <li class="nav__item has-dropdown">
-                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link">Company</a>
+                <a href="index.html" data-toggle="dropdown" class="dropdown-toggle nav__item-link active">Company</a>
                 <ul class="dropdown-menu">
                   <li class="nav__item">
                     <a href="about-us.html" class="nav__item-link">About Us</a>
@@ -70,7 +71,7 @@
                     <a href="faqs.html" class="nav__item-link">Help & FAQs</a>
                   </li>
                   <li class="nav__item">
-                    <a href="contact-us.html" class="nav__item-link">contact us</a>
+                    <a href="contact-us.html" class="nav__item-link active">contact us</a>
                   </li>
                   <!-- <li class="nav__item">
                     <a href="index.html" class="nav__item-link">Careers</a>
@@ -165,34 +166,31 @@
     <!-- ========================= 
             Google Map
     =========================  -->
-    <section class="google-map py-0">
-      <iframe height="620" style="width: 100%;"
-        src="https://maps.google.com/maps?q=Suite%20100%20San%20Francisco%2C%20LA%2094107%20United%20States&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"></iframe>
-    </section><!-- /.GoogleMap -->
+    
 
     <!-- ==========================
         contact layout 1
     =========================== -->
-    <section class="contact-layout1 py-0 mt--100">
+    <section class="contact-layout1  ">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="contact-panel d-flex flex-wrap">
-              <div class="contact-panel__info bg-overlay bg-overlay-primary">
-                <div class="bg-img"><img src="assets/images/banners/2.jpg" alt="banner"></div>
+              <div class="contact-panel__info bg-overlay bg-overlay-primary d-flex flex-column justify-content-center align-items-center">
+               <div class="bg-img"><img src="assets/images/banners/2.jpg" alt="banner"></div>
                 <h4 class="contact-panel__title color-white">Tailored Solutions For Your Security Priorities</h4>
                 <p class="contact-panel__desc color-white">We take great pride in everything that we do, control over
                   products allows us to ensure our customers receive the best quality service.
                 </p>
                 <ul class="contact__list list-unstyled mb-40">
                   <li>
-                    <i class="icon-phone"></i><a href="tel:+5565454117">Emergency Line: (002) 01061245741</a>
+                    <i class="fa fa-solid fa-phone"></i><a href="tel:+5565454117">Phone: +91 8590622553</a>
                   </li>
                   <li>
-                    <i class="icon-location"></i><a href="#">Location: Brooklyn, New York</a>
+                    <i class="fa fa-solid fa-envelope"></i><a href="#">Email: contact@quardzlahnn.com</a>
                   </li>
                   <li>
-                    <i class="icon-clock"></i><a href="contact-us.html">Mon - Fri: 8:00 am - 7:00 pm</a>
+                    <i class="fa fa-solid fa-globe"></i><a href="contact-us.html">www.quardzlahnn.com</a>
                   </li>
                 </ul>
                 <a href="contact-us.html" class="btn btn__white btn__xl btn__block justify-content-between">
@@ -228,13 +226,31 @@
                   </div><!-- /.col-lg-6 -->
                   <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
-                      <select class="form-control">
-                        <option value="0">Select Your services</option>
-                        <option value="1">service 1</option>
-                        <option value="2">service 2</option>
-                      </select>
+                      <input type="text" class="form-control" placeholder="Country" id="contact-Country"
+                        name="contact-Country" required>
                     </div>
-                  </div><!-- /.col-lg-6 -->
+                  </div>
+               <!-- /.col-lg-6 -->
+               <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="State" id="contact-State"
+                    name="contact-State" required>
+                </div>
+              </div>
+           <!-- /.col-lg-6 -->
+           <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="City" id="contact-City"
+                name="contact-City" required>
+            </div>
+          </div>
+       <!-- /.col-lg-6 -->
+       <div class="col-12">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Pincode" id="contact-Pincode"
+            name="contact-Pincode" required>
+        </div>
+      </div>
                   <div class="col-12">
                     <div class="form-group">
                       <textarea class="form-control" placeholder="Additional Details" id="contact-message"

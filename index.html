@@ -980,56 +980,102 @@
       </div>
     </section>
 
-    <section class="contact-layout3 bg-overlay bg-overlay-primary bg-overlay-primary-gradient pb-50">
-      <div class="bg-img"><img src="assets/images/banners/5.jpg" alt="banner"></div>
+    <section class="contact-layout1  mt--100">
       <div class="container">
-        <div class="contact-panel p-0">
-          <div class="row">
-            <div class="col-sm-12 col-md-12">
+        <div class="row">
+          <div class="col-12">
+            <div class="contact-panel d-flex flex-wrap">
+              <div class="contact-panel__info bg-overlay bg-overlay-primary d-flex flex-column justify-content-center align-items-center">
+               <div class="bg-img"><img src="assets/images/banners/2.jpg" alt="banner"></div>
+                <h4 class="contact-panel__title color-white">Tailored Solutions For Your Security Priorities</h4>
+                <p class="contact-panel__desc color-white">We take great pride in everything that we do, control over
+                  products allows us to ensure our customers receive the best quality service.
+                </p>
+                <ul class="contact__list list-unstyled mb-40">
+                  <li>
+                    <i class="fa fa-solid fa-phone"></i><a href="tel:+5565454117">Phone: +91 8590622553</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-solid fa-envelope"></i><a href="#">Email: contact@quardzlahnn.com</a>
+                  </li>
+                  <li>
+                    <i class="fa fa-solid fa-globe"></i><a href="contact-us.html">www.quardzlahnn.com</a>
+                  </li>
+                </ul>
+                <a href="contact-us.html" class="btn btn__white btn__xl btn__block justify-content-between">
+                  <span>Get Started Now</span> <i class="icon-arrow-right"></i>
+                </a>
+              </div>
               <form class="contact-panel__form" method="post" action="assets/php/contact.php" id="contactForm">
                 <div class="row">
                   <div class="col-sm-12">
-                    <h4 class="contact-panel__title">Contact Us</h4>
-                    <p class="contact-panel__desc mb-30">Please fill out the form below and we'll be in touch shortly.
-                      You can also call us at <strong class="color-secondary">+91 85906 22553</strong> for immediate
-                      assistance.</p>
+                    <h4 class="contact-panel__title">Get In Touch</h4>
+                    <p class="contact-panel__desc mb-30">We take great pride in everything that we do, control over
+                      products allows us to ensure customers receive the best quality service and highest standards, you
+                      need a dedicated team of specialists.
+                    </p>
                   </div>
-                  <div class="col-sm-6 col-md-6">
+                  <div class="col-sm-6 col-md-6 col-lg-6">
                     <div class="form-group">
-                      <input type="text" class="form-control" placeholder="First Name">
+                      <input type="text" class="form-control" placeholder="Name" id="contact-name" name="contact-name"
+                        required>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email" id="contact-email"
+                        name="contact-email" required>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Phone" id="contact-Phone"
+                        name="contact-phone" required>
+                    </div>
+                  </div><!-- /.col-lg-6 -->
+                  <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Country" id="contact-Country"
+                        name="contact-Country" required>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Last Name">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input type="email" class="form-control" placeholder="Email Address">
-                    </div>
-                  </div>
-                  <div class="col-sm-6 col-md-6">
-                    <div class="form-group">
-                      <input type="tel" class="form-control" placeholder="Phone Number">
-                    </div>
-                  </div>
-                  <div class="col-12">
-                    <div class="form-group">
-                      <textarea class="form-control" rows="4" placeholder="How can we help you?"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn__secondary btn__xl">
-                      <span>Send Message</span>
-                      <i class="icon-arrow-right icon-filled"></i>
-                    </button>
-                    <div class="contact-result"></div>
-                  </div>
+               <!-- /.col-lg-6 -->
+               <div class="col-sm-6 col-md-6 col-lg-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="State" id="contact-State"
+                    name="contact-State" required>
                 </div>
-              </form>
+              </div>
+           <!-- /.col-lg-6 -->
+           <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="City" id="contact-City"
+                name="contact-City" required>
             </div>
           </div>
+       <!-- /.col-lg-6 -->
+       <div class="col-12">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Pincode" id="contact-Pincode"
+            name="contact-Pincode" required>
         </div>
       </div>
+                  <div class="col-12">
+                    <div class="form-group">
+                      <textarea class="form-control" placeholder="Additional Details" id="contact-message"
+                        name="contact-message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn__secondary btn__xl mt-10">
+                      <i class="icon-arrow-right"></i> <span>Submit Request</span>
+                    </button>
+                    <div class="contact-result"></div>
+                  </div><!-- /.col-lg-12 -->
+                </div><!-- /.row -->
+              </form>
+            </div>
+          </div><!-- /.col-lg-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
     </section>
 
   <!-- ========================
